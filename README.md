@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+LIVE SITE: https://jakesspotifyclone.netlify.app/
+
+REQUIRES SPOTIFY PREMIUM TO PLAY SONGS
+
 ## Available Scripts
 
 In the project directory, you can run:
