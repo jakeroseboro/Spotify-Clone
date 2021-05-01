@@ -1,0 +1,377 @@
+$topcolor: #298aa8;
+$bottomcolor:#c11ed7;
+
+.interface {
+    background: linear-gradient($topcolor,$bottomcolor);
+    overflow: hidden;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: ivory;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background:black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color:#b3b3b3;
+        &:hover {
+            background: ivory;
+        }
+    }
+}
+
+.not-controls {
+    display: flex;
+    margin: 0;
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+}
+
+.art {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.title-row{
+    display: flex;
+    align-items: flex-end;
+}
+
+.playlist-info {
+    margin-left: 40px;
+}
+
+.loading {
+    margin-top: calc(50vh - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.playing {
+    color:#298aa8;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.track-table {
+    margin: 40px auto;
+    max-width: 95%;
+    overflow: auto;
+}
+
+tr:hover {
+    & td{
+        background-color: #282828;
+    }
+}
+
+.MuiTable-stickyHeader {
+    & td{
+        color: white;
+    }
+}
+
+.MuiTableCell-stickyHeader {
+    background-color: #181818 !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.playlist-title {
+    font-size: 4rem;
+    @media(max-width: 1200px) {
+        font-size: 3rem;
+    }
+    // @media(max-width: 900px) {
+    //     font-size: 2rem;
+    // }
+}
+
+.artist-link { 
+    cursor: pointer;
+}
+
+.controls {
+    background-color: #282828;
+    min-height: 100px;
+    min-width: 768px;
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    justify-self: flex-end;
+
+    & .fa:hover {
+        color: white;
+    }
+}
+
+.mr-10 {
+    margin-right: 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    margin-left: 25px;
+    min-width: 32%;
+    justify-content: flex-start;
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 32%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.player-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    min-width: 32%;
+    justify-content: flex-end;
+}
+
+.player-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.player-artist {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    min-width: 210px;
+    background-color: black;
+    color: white;
+    padding-top: 24px;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+
+    & i {
+        font-size: 3rem !important;
+    }
+}
+
+.menu-item {
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: .8rem;
+
+    & i {
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        color: ivory;
+    }
+}
+
+.selected {
+    background-color: #282828;
+    color: white;
+    padding-left: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #b3b3b3;
+
+    &:hover {
+        color: ivory;
+    }
+}
+
+.menu-playlist-title {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #b3b3b3;
+    letter-spacing: 1.2px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.menu-playlist-button {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+
+    &:hover{
+        color: ivory;
+    }
+}
+
+.menu-playlist {
+    color: #b3b3b3;
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 3;
+    width: 100%;
+    overflow: auto;
+    user-select: none;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background:black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color:#b3b3b3;
+        &:hover {
+            background: ivory;
+        }
+    }
+}
+
+.playlist {
+    line-height: 2;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.divider {
+    width: 80%;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.card-category {
+    padding-top: 40px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.card-category-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-category-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 200px;
+    height: 275px;
+    background-color: #222121;
+    outline: black 1px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &:hover {
+        background-color: lighten($color:  #181818, $amount: 10);
+        cursor: pointer;
+    }
+}
+
+.card-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.card-text {
+    font-weight: 400;
+    overflow: hidden;
+    max-width: 175px;
+    max-height: 75px;
+}
+
+.card-title {
+    font-size: 16px;
+    color: ivory;
+    text-align: center;
+    text-justify: center;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+
+.card-description { 
+    font-size: 14px;
+    color: #b3b3b3;
+    text-align: center;
+    text-justify: center;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: center;
+
+    &:active{
+        outline: none;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.fa-heart {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
